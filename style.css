@@ -1,0 +1,276 @@
+ 
+/* =========================================
+   CSS UNTUK SELURUH HALAMAN
+   ========================================= */
+
+/* Mengatur tampilan dasar halaman */
+body {
+    /* Mengatur jenis huruf */
+    font-family: Arial, sans-serif;
+
+    /* Memberikan warna abu-abu muda pada background */
+    background-color: #f5f5f5;
+
+    /* Menghilangkan jarak bawaan browser */
+    margin: 0;
+
+    /* Memberikan jarak antara isi halaman dan tepi browser */
+    padding: 30px;
+}
+
+
+/* Mengatur judul utama h1 */
+h1 {
+    /* Memberikan warna abu-abu gelap */
+    color: #333;
+
+    /* Mengatur jarak bawah judul */
+    margin-bottom: 10px;
+}
+
+
+/* Mengatur judul h2 */
+h2 {
+    /* Memberikan warna abu-abu */
+    color: #555;
+}
+
+
+/* Mengatur judul h3 */
+h3 {
+    /* Memberikan warna abu-abu gelap */
+    color: #333;
+}
+
+
+/* Mengatur judul h4 */
+h4 {
+    /* Memberikan warna abu-abu */
+    color: #555;
+
+    /* Memberikan jarak bawah */
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   BAGIAN MAKANAN DAN MINUMAN
+   ========================================= */
+
+/* Mengatur tempat kartu makanan dan minuman */
+form > div {
+    /* Membuat isi menjadi sejajar ke samping */
+    display: flex;
+
+    /* Memberikan jarak antar kartu */
+    gap: 20px;
+
+    /* Membuat semua kartu berada di tengah */
+    justify-content: center;
+
+    /* Membuat kartu turun ke baris berikutnya jika layar kecil */
+    flex-wrap: wrap;
+}
+
+
+/* Mengatur setiap kartu makanan dan minuman */
+form > div > div {
+    /* Memberikan warna putih pada kartu */
+    background-color: white;
+
+    /* Mengatur lebar kartu */
+    width: 220px;
+
+    /* Memberikan jarak antara isi dan tepi kartu */
+    padding: 15px;
+
+    /* Membuat sudut kartu melengkung */
+    border-radius: 15px;
+
+    /* Membuat teks berada di tengah */
+    text-align: center;
+
+    /* Memberikan bayangan pada kartu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    /* Memberikan animasi saat kartu disentuh mouse */
+    transition: 0.3s;
+}
+
+
+/* Memberikan efek ketika mouse diarahkan ke kartu */
+form > div > div:hover {
+
+    /* Membuat kartu sedikit naik */
+    transform: translateY(-5px);
+
+    /* Membuat bayangan menjadi lebih jelas */
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Mengatur gambar makanan dan minuman */
+form img {
+    /* Mengatur lebar gambar */
+    width: 200px;
+
+    /* Mengatur tinggi gambar */
+    height: 200px;
+
+    /* Membuat gambar memenuhi ukuran tanpa merusak bentuk */
+    object-fit: cover;
+
+    /* Membuat sudut gambar melengkung */
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   BAGIAN PILIH JUMLAH
+   ========================================= */
+
+/* Mengatur kotak pilihan jumlah */
+select {
+    /* Memberikan jarak di dalam kotak */
+    padding: 7px 10px;
+
+    /* Memberikan garis tepi */
+    border: 1px solid #ccc;
+
+    /* Membuat sudut kotak melengkung */
+    border-radius: 6px;
+
+    /* Mengatur ukuran tulisan */
+    font-size: 14px;
+}
+
+
+/* Mengatur tulisan label */
+label {
+    /* Mengatur ukuran tulisan */
+    font-size: 14px;
+
+    /* Memberikan warna tulisan */
+    color: #333;
+}
+
+
+/* Mengatur radio button */
+input[type="radio"] {
+    /* Memberikan jarak bagian atas */
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   BAGIAN TOMBOL
+   ========================================= */
+
+/* Mengatur tampilan tombol Submit */
+button {
+    /* Memberikan jarak bagian atas */
+    margin-top: 25px;
+
+    /* Memberikan jarak antara tulisan dan batas tombol */
+    padding: 12px 25px;
+
+    /* Memberikan warna gelap pada tombol */
+    background-color: #333;
+
+    /* Memberikan warna putih pada tulisan */
+    color: white;
+
+    /* Menghilangkan garis tepi */
+    border: none;
+
+    /* Membuat sudut tombol melengkung */
+    border-radius: 8px;
+
+    /* Mengubah kursor menjadi tangan */
+    cursor: pointer;
+
+    /* Mengatur ukuran tulisan */
+    font-size: 16px;
+}
+
+
+/* Mengubah tampilan tombol ketika mouse diarahkan */
+button:hover {
+    /* Mengubah warna tombol menjadi abu-abu */
+    background-color: #555;
+}
+
+
+/* =========================================
+   BAGIAN PESANAN.HTML
+   ========================================= */
+
+/* Membuat kotak untuk menampilkan detail pesanan */
+.pesanan {
+    /* Memberikan warna putih pada kotak */
+    background-color: white;
+
+    /* Mengatur lebar kotak */
+    width: 500px;
+
+    /* Memberikan jarak di dalam kotak */
+    padding: 25px;
+
+    /* Membuat sudut kotak melengkung */
+    border-radius: 15px;
+
+    /* Memberikan bayangan pada kotak */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    /* Membuat teks rata kiri */
+    text-align: left;
+
+    /* Membuat kotak berada di tengah */
+    margin: auto;
+}
+
+
+/* Mengatur judul h2 yang berada di dalam kotak pesanan */
+.pesanan h2 {
+    /* Membuat judul berada di tengah */
+    text-align: center;
+
+    /* Memberikan garis bawah */
+    border-bottom: 1px solid #ddd;
+
+    /* Memberikan jarak antara tulisan dan garis */
+    padding-bottom: 10px;
+}
+
+
+/* Mengatur paragraf di dalam kotak pesanan */
+.pesanan p {
+    /* Mengatur ukuran tulisan */
+    font-size: 17px;
+
+    /* Memberikan jarak di dalam paragraf */
+    padding: 5px;
+
+    /* Memberikan jarak antar paragraf */
+    margin: 5px 0;
+}
+
+
+/* Mengatur informasi yang berada di dalam span */
+.pesanan span {
+    /* Membuat tulisan menjadi tebal */
+    font-weight: bold;
+
+    /* Memberikan warna tulisan */
+    color: #333;
+}
+
+
+/* Mengatur tombol di halaman pesanan */
+.pesanan button {
+    /* Membuat tombol berada di tengah */
+    display: block;
+
+    /* Memberikan jarak otomatis kiri dan kanan */
+    margin: 25px auto 0;
+}

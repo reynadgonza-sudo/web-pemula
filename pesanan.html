@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pesanan Anda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<center>
+
+    <h1>Pesanan Anda</h1>
+    <h2>Detail Makanan dan Minuman</h2>
+
+    <div class="pesanan">
+
+        <h2>Makanan</h2>
+
+        <p>
+            Makanan 1 :
+            <span id="makanan1"></span>
+        </p>
+
+        <p>
+            Tingkat Pedas :
+            <span id="pedas1"></span>
+        </p>
+
+        <p>
+            Makanan 2 :
+            <span id="makanan2"></span>
+        </p>
+
+        <p>
+            Tingkat Pedas :
+            <span id="pedas2"></span>
+        </p>
+
+        <p>
+            Makanan 3 :
+            <span id="makanan3"></span>
+        </p>
+
+        <p>
+            Tingkat Pedas :
+            <span id="pedas3"></span>
+        </p>
+
+
+        <h2>Minuman</h2>
+
+        <p>
+            Minuman 1 :
+            <span id="minuman1"></span>
+        </p>
+
+        <p>
+            Tingkat Kemanisan :
+            <span id="manis1"></span>
+        </p>
+
+        <p>
+            Minuman 2 :
+            <span id="minuman2"></span>
+        </p>
+
+        <p>
+            Tingkat Kemanisan :
+            <span id="manis2"></span>
+        </p>
+
+        <p>
+            Minuman 3 :
+            <span id="minuman3"></span>
+        </p>
+
+        <p>
+            Tingkat Kemanisan :
+            <span id="manis3"></span>
+        </p>
+
+        <br>
+
+      <br>
+     
+
+<button onclick="kembali()">Kembali Memilih</button>
+
+<!-- Tombol untuk menyelesaikan pesanan -->
+<button onclick="selesai()">Selesai Pesanan</button>
+
+    </div>
+
+</center>
+
+
+<script>
+
+    const data = new URLSearchParams(window.location.search);
+
+    // Makanan
+    document.getElementById("makanan1").innerHTML =
+        data.get("jumlah1") + " porsi";
+
+    document.getElementById("pedas1").innerHTML =
+        data.get("pedas1");
+
+    document.getElementById("makanan2").innerHTML =
+        data.get("jumlah2") + " porsi";
+
+    document.getElementById("pedas2").innerHTML =
+        data.get("pedas2");
+
+    document.getElementById("makanan3").innerHTML =
+        data.get("jumlah3") + " porsi";
+
+    document.getElementById("pedas3").innerHTML =
+        data.get("pedas3");
+
+
+    // Minuman
+    document.getElementById("minuman1").innerHTML =
+        data.get("jumlah4") + " gelas";
+
+    document.getElementById("manis1").innerHTML =
+        data.get("manis1");
+
+    document.getElementById("minuman2").innerHTML =
+        data.get("jumlah5") + " gelas";
+
+    document.getElementById("manis2").innerHTML =
+        data.get("manis2");
+
+    document.getElementById("minuman3").innerHTML =
+        data.get("jumlah6") + " gelas";
+
+    document.getElementById("manis3").innerHTML =
+        data.get("manis3");
+
+
+    
+</script>
+
+<script>
+    function kembali() {
+        history.back();
+    }
+
+    function selesai() {
+        window.location.href = "selesai.html";
+    }
+</script>
+</body>
+</html>
