@@ -47,6 +47,7 @@
 
     <div class="login web makanan">
         <h2>Login web makanan</h2>
+        <h3>user=admin  pass=12345</h3>
 
         <input type="text" id="username" placeholder="Username">
         <input type="password" id="password" placeholder="Password">
@@ -61,7 +62,7 @@
             let username = document.getElementById("username").value;
             let password = document.getElementById("password").value;
 
-            if (username == "reynad" && password == "12345") {
+            if (username == "admin" && password == "12345") {
                 window.location.href = "makanan.html";
             } else {
                 document.getElementById("pesan").innerHTML =
